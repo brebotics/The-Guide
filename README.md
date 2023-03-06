@@ -22,7 +22,7 @@ also make sure to update versions so that control hub & robot controller are the
 ## TeleOp
 copy da files either from previous year or [INPUT ORIGIN HERE](chrome://dino/)
 
-make sure to UPDATE the variables to ur current build: if the robot has 4 wheels or 6 wheels, if the robot has a claw or a shooter, and make sure that **you have x & y variables to move
+make sure to UPDATE the variables to ur current build: if the robot has 4 wheels or 6 wheels, if the robot has a claw or a shooter, and make sure that **you have x & y variables to move**
 ex: basic DriveTrain code
 ```
 package org.firstinspires.ftc.teamcode;

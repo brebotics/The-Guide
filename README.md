@@ -27,7 +27,7 @@ ex: basic DriveTrain code
 ```
 package org.firstinspires.ftc.teamcode;
 
-import `...`
+import ...
 
 @TeleOp(name = "ProvTele")
 public class ProvTele extends LinearOpMode {

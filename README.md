@@ -170,29 +170,30 @@ If the robot is moving completely off route, it's probably a build issue so ask 
  ```
  
 ### Vuforia
-1. Make an account and log into vuforia to make your key https://developer.vuforia.com/ 
-2. Get [sample](https://github.com/FIRST-Tech-Challenge/FtcRobotController/blob/master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetectionWebcam.java) code for object detection ftc and paste vuforia key 
+- Make an account and log into vuforia to make your key https://developer.vuforia.com/ 
+- Get [sample](https://github.com/FIRST-Tech-Challenge/FtcRobotController/blob/master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetectionWebcam.java) code for object detection ftc and paste vuforia key 
 
 ### Prep
-3. Look at competition and determine what you need to detect
-4. Create footage (30s long) of the object preferably using low fps(15-30 worked for us)
-ftc-ml
-5. Log into ftc machine learning(IMPORTANT: you need to use a teacher or mentor’s account or they have to give permission) 
+- Look at competition and determine what you need to detect
+- Create footage (30s long) of the object preferably using low fps(15-30 worked for us)
+
+### ftc-ml
+- Log into ftc machine learning(IMPORTANT: you need to use a teacher or mentor’s account or they have to give permission) 
 https://ftc-ml.firstinspires.org/ 
-6. Upload the footage to the website
-7. Click on the blue text, to open the window for tagging objects
-8. Create a box around the object, and advance a frame
-9 . After 10 frames, use the “Start Tracking” button
-10. If a new element is introduced, stop the tracking & repeat steps 8&9
-11. Once the video are fully labeled, review the frames to find errors
-12. Repeat steps if you want to use multiple videos in 1 dataset
+- Upload the footage to the website
+ Click on the blue text, to open the window for tagging objects
+- Create a box around the object, and advance a frame
+- After 10 frames, use the “Start Tracking” button
+- If a new element is introduced, stop the tracking & repeat steps 8&9
+- Once the video are fully labeled, review the frames to find errors
+- Repeat steps if you want to use multiple videos in 1 dataset
 
 ### Datasets
-13. Select the videos in ftc-ml homepage & click the produce datasets
-14. Review how many labels there are - if there are more/less than expected, relabel the video/s
-15. Select the data set & click start training
-16. Calculate # of steps using the equation in da guide
-17. Once finish you can download da file
+- Select the videos in ftc-ml homepage & click the produce datasets
+- Review how many labels there are - if there are more/less than expected, relabel the video/s
+- Select the data set & click start training
+- Calculate # of steps using the equation in da guide
+- Once finish you can download da file
 
 ### Androidstudio
 Take the file - put in da assets folder (FTCRobotController/assets → paste tflite into here)

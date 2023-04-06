@@ -249,4 +249,4 @@ paste in `List<Recognition> updatedRecognitions = tfod.getUpdatedRecognitions();
 
 ### Confidence
 
-Found in the initTfod() method, the var `tfodParameters.minResultConfidence` takes a percentage as a float. Adjust this variable as needed to reliably detect the object
+Found in the `initTfod()` method, the var `tfodParameters.minResultConfidence` takes a percentage as a float. Adjust this variable as needed to reliably detect the object

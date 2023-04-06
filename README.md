@@ -82,4 +82,86 @@ learn obute trajectorie on da website
 
 ## Tuning
 ***VERY IMPORTANT: READ THE ***[***ROADRUNNER WEBSITE***](https://learnroadrunner.com/)
+```bash
+1. Import the FTC project in Android Studio
+2. Connect your device with the robot
+3. press play button in Android Studio to build and upload the code.
+```
+
+[Installing Road Road Runner onto Android Studio](https://learnroadrunner.com/installing.html#method-1-downloading-the-quickstart)
+
+This is the appropriate steps for the android studio
+
+```bash
+1. DriveConstants
+2. DriveFeedforwardTuner (found as AutomaticFeedforwardTuner)
+3. StraightTest & StrafeTest
+4. TrackWidthTuner
+5. TurnTest
+6. FollowerPIDTuner
+7. SplineTest
+```
+
+Before tuning, if 192.168.43.1:8080/dash link doesn't work it either means you haven't installed Road Runner properly or your robot is not connected
+This is a helpful video for the first few tests: [video](https://www.youtube.com/watch?v=7wjaX2KXrrM)
+
+## 1. DriveConstants
+
+Make sure to get this step right.
+If you get this step wrong you will end up having trouble with the rest of the tests
+(This is what we were stuck on for a while)
+
+## 2. DriveFeedForwardTuner
+
+```bash
+BEFORE YOU START 
+The robot most likely WILL drift this is NOT AN ISSUE
+just make sure that the graph is close to accurate and you are good to move on
+
+kV: affect the max and min of the graph
+kA: affects the phase shift of the graph. Changing the kA will make the graph horizantally aligned with the target graph.
+!!!!!(Start with a very small number and increase bit by bit or else the robot may go insane)!!!!!
+kStatic: We just used the value from the AutomaticFeedforwardTuner
+
+The graph will have a small lump, just ignore it it's REV's fault.
+```
+
+First, start with the AutomaticFeedforwardTuner to find the approximate value of the kV and kStatic.
+You will need to use your phone and controller for the telemetry.
+(The MAX_VEL should be 1/(kV) if it is not the case, change the MAX_VEL value not the kV.)
+
+Then, run the ManualFeedforwardTuner with the values you got. From there, tinker the values until the graph is somewhat aligned.
+
+## 3. StraightTest & StrafeTest
+
+Relatively straight forward. If you follow the steps on the website, everything should work fine besides the strafe(may be troublesome).
+
+THIS IS WHAT THE PREVIOUS YEAR BREBOTICS SAID ABOUT THIS TEST
+```bash
+StrafeTest, our team failed to tune the robot to strafe straight right/left. We was able to match the distance but the direction was quite messed up.
+I believe this was either the problem of the weight distribution or wheel attachment of our robot. 
+However, the goal of this process is to match the distance not the heading so if you got the distance right, then you'll be fine.
+(+ Heading can manually adjusted while coding the autnomous, so dw)
+```
+## 4. TrackWidthTuner
+
+For us, this test was realtively quick. Repeat the process about 5 times and use the most accurate value of the five.
+AGAIN, The graph is  more important than what you see on the robot(what you see on the robot may be a builder problem so communicate 
+with them or else you may waste time trying to fix a hardware issue through code.)
+
+## 5. TurnTest
+
+An error range of 1-3 is what you should be aiming for. 
+
+## 6. FollowerPIDTuner
+
+Back and forth test is recommended for more accuracy "But we couldn't because not enough space"
+
+## 7. Spline Test
+
+The spline test gave us no issues. If the heading is off, redo the TrackWidthTuner and/or TurnTest.
+If the distance is off, check your DriveConstants
+If the robot is moving completely off route, it's probably a build issue so ask your builders to check to robots
+(For us the issue was tight screws on motors)
+
 summary is here:

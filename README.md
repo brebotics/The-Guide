@@ -11,9 +11,9 @@ This guide includes the following
 - [Object Detection](https://github.com/brebotics/The-Guide#object-detectionvuforia-tflite)
 
 ## Setting up Android Studio
-head ova to da [android studio website](https://developer.android.com/studio), n download da exe
+head over to the [android studio website](https://developer.android.com/studio), and download the exe
 
-make sure ur not on a firewalled wifi connection, gradle issues may occur
+make sure your not on a firewalled wifi connection, gradle issues may occur
 
 
 now that android studio is installed, i assume you want to learn roadrunner as well. download [roadrunner from da github](https://github.com/acmerobotics/road-runner)

@@ -198,5 +198,25 @@ https://ftc-ml.firstinspires.org/
 Take the file - put in da assets folder (FTCRobotController/assets → paste tflite into here)
 Go back to ur edited sample code & paste the file’s name into TFOD_MODEL_ASSET
 Add the labels of ur objects
-![glurhsejgoisehfi](https://user-images.githubusercontent.com/116035265/230485862-3d9dcb32-9397-432c-863e-5815fcfb9eff.png)
 
+```
+private static final String TFOD_MODEL_ASSET = "model_20221202_164154.tflite";
+    private static final String[] LABELS = {
+            "blue",//1
+            "purple",//2
+            "yellow"//3
+    };
+```
+
+Make sure you have initVuforia() and initTfod() in your code, as well as the camera activation 
+
+```
+ private void initVuforia() {
+        VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters();
+
+        parameters.vuforiaLicenseKey = VUFORIA_KEY;
+        parameters.cameraName = hardwareMap.get(WebcamName.class, "Webcam");
+
+        vuforia = ClassFactory.getInstance().createVuforia(parameters);
+    }//end initVuforia()
+```

@@ -1,9 +1,14 @@
 # The Guide
 Become Not Stupid™
 
-wuz gud guyz, its ya boy
+This guide is brought to you by Me :)
+This guide includes the following
 
-dis gyde is 4 ftc teams 
+- Setting up Android Studio
+- Teleop
+- Autonomous
+- Tuning
+- Object Detection
 
 ## Setting up Android Studio
 head ova to da [android studio website](https://developer.android.com/studio), n download da exe
@@ -14,7 +19,7 @@ make sure ur not on a firewalled wifi connection, gradle issues may occur
 now that android studio is installed, i assume you want to learn roadrunner as well. download [roadrunner from da github](https://github.com/acmerobotics/road-runner)
 
 open the project with AS(android studio)
-## Previous Projects
+### Previous Projects
 If continuing from last year, make sure to backup your code on a seperate folder, as well as on github. 
 
 Yoink da teleop & auto files

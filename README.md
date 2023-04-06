@@ -248,8 +248,3 @@ paste in `List<Recognition> updatedRecognitions = tfod.getUpdatedRecognitions();
 (this code detects an icon, and saves which icon was detected in the var signal)
 
 ### Confidence
-
-Found in the initTfod() method, the var `tfodParameters.minResultConfidence` takes a percentage as a float. Adjust this variable as needed to reliably detect the object
-
-
-

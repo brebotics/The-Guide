@@ -220,3 +220,36 @@ Make sure you have initVuforia() and initTfod() in your code, as well as the cam
         vuforia = ClassFactory.getInstance().createVuforia(parameters);
     }//end initVuforia()
 ```
+After initializing the code, go to the if(while()) loop
+paste in `List<Recognition> updatedRecognitions = tfod.getUpdatedRecognitions();` (make sure “tfod” is your TFObjectDetector object)
+  
+```
+     List<Recognition> updatedRecognitions = tfod.getUpdatedRecognitions();
+                if (signal == 0) {
+                    for (int i = 0; i < updatedRecognitions.size(); i++) {
+                        if (updatedRecognitions.get(i).getLabel().equals("blue")) {
+                            signal = 1;
+                            telemetry.addData("Signal: ", "blue");
+                            break;
+                        } else if (updatedRecognitions.get(i).getLabel().equals("purple")) {
+                            signal = 2;
+                            telemetry.addData("Signal: ", "purple");
+                            break;
+                        } else if (updatedRecognitions.get(i).getLabel().equals("yellow")) {
+                            signal = 3;
+                            telemetry.addData("Signal: ", "yellow");
+                            break;
+                        }
+                    telemetry.addData("Signal: ", "none");
+                    }
+                    telemetry.update();
+                }
+```
+(this code detects an icon, and saves which icon was detected in the var signal)
+
+### Confidence
+
+Found in the initTfod() method, the var `tfodParameters.minResultConfidence` takes a percentage as a float. Adjust this variable as needed to reliably detect the object
+
+
+

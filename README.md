@@ -197,12 +197,12 @@ https://ftc-ml.firstinspires.org/
 - Select the videos in ftc-ml homepage & click the produce datasets
 - Review how many labels there are - if there are more/less than expected, relabel the video/s
 - Select the data set & click start training
-- Calculate # of steps using the equation in da guide
-- Once finish you can download da file
+- Calculate # of steps using the equation in the guide
+- Once finish you can download the file
 
-### Androidstudio
-Take the file - put in da assets folder (FTCRobotController/assets → paste tflite into here)
-Go back to ur edited sample code & paste the file’s name into TFOD_MODEL_ASSET
+### Android Studio
+Take the file - put in the assets folder (FTCRobotController/assets → paste tflite into here)
+Go back to your edited sample code & paste the file’s name into TFOD_MODEL_ASSET
 Add the labels of ur objects
 
 ```

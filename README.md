@@ -4,11 +4,11 @@ Become Not Stupid™
 This guide is brought to you by Me :)
 This guide includes the following
 
-- Setting up Android Studio
-- Teleop
-- Autonomous
-- Tuning
-- Object Detection
+- [Setting up Android Studio](https://github.com/brebotics/The-Guide/blob/main/README.md#setting-up-android-studio)
+- [Teleop](https://github.com/brebotics/The-Guide#teleop)
+- [Autonomous](https://github.com/brebotics/The-Guide#autonomous)
+- [Tuning](https://github.com/brebotics/The-Guide#tuning)
+- [Object Detection](https://github.com/brebotics/The-Guide#object-detectionvuforia-tflite)
 
 ## Setting up Android Studio
 head ova to da [android studio website](https://developer.android.com/studio), n download da exe

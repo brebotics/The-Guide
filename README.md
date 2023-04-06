@@ -105,13 +105,13 @@ This is the appropriate steps for the android studio
 Before tuning, if 192.168.43.1:8080/dash link doesn't work it either means you haven't installed Road Runner properly or your robot is not connected
 This is a helpful video for the first few tests: [video](https://www.youtube.com/watch?v=7wjaX2KXrrM)
 
-## 1. DriveConstants
+# 1. DriveConstants
 
 Make sure to get this step right.
 If you get this step wrong you will end up having trouble with the rest of the tests
 (This is what we were stuck on for a while)
 
-## 2. DriveFeedForwardTuner
+# 2. DriveFeedForwardTuner
 
 ```bash
 BEFORE YOU START 
@@ -132,7 +132,7 @@ You will need to use your phone and controller for the telemetry.
 
 Then, run the ManualFeedforwardTuner with the values you got. From there, tinker the values until the graph is somewhat aligned.
 
-## 3. StraightTest & StrafeTest
+# 3. StraightTest & StrafeTest
 
 Relatively straight forward. If you follow the steps on the website, everything should work fine besides the strafe(may be troublesome).
 
@@ -143,25 +143,23 @@ I believe this was either the problem of the weight distribution or wheel attach
 However, the goal of this process is to match the distance not the heading so if you got the distance right, then you'll be fine.
 (+ Heading can manually adjusted while coding the autnomous, so dw)
 ```
-## 4. TrackWidthTuner
+# 4. TrackWidthTuner
 
 For us, this test was realtively quick. Repeat the process about 5 times and use the most accurate value of the five.
 AGAIN, The graph is  more important than what you see on the robot(what you see on the robot may be a builder problem so communicate 
 with them or else you may waste time trying to fix a hardware issue through code.)
 
-## 5. TurnTest
+# 5. TurnTest
 
 An error range of 1-3 is what you should be aiming for. 
 
-## 6. FollowerPIDTuner
+# 6. FollowerPIDTuner
 
 Back and forth test is recommended for more accuracy "But we couldn't because not enough space"
 
-## 7. Spline Test
+# 7. Spline Test
 
 The spline test gave us no issues. If the heading is off, redo the TrackWidthTuner and/or TurnTest.
 If the distance is off, check your DriveConstants
 If the robot is moving completely off route, it's probably a build issue so ask your builders to check to robots
 (For us the issue was tight screws on motors)
-
-summary is here:

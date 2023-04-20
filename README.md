@@ -19,6 +19,15 @@ make sure your not on a firewalled wifi connection, gradle issues may occur
 now that android studio is installed, i assume you want to learn roadrunner as well. download [roadrunner from da github](https://github.com/acmerobotics/road-runner)
 
 open the project with AS(android studio)
+
+IF THE FTC REPOSITORY ISN'T EDITABLE:
+to import a repository from the FIRST-Tech-Challenge Github, open in Android Studio
+
+File > New > Project From Version Control...
+
+Choose the first option and paste the URL into the part where it says URL
+[https://github.com/FIRST-Tech-Challenge/FtcRobotController](https://github.com/FIRST-Tech-Challenge/FtcRobotController)
+
 ### Previous Projects
 If continuing from last year, make sure to backup your code on a seperate folder, as well as on github. 
 
